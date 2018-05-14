@@ -113,6 +113,10 @@ h6 {
 	text-transform: uppercase;
 }
 
+.matt-title h1,h2,h4,h6  {
+	color: white;
+}
+
 /* =Buttons
 -------------------------------------------------------------- */
 .bolt-button-send {
@@ -341,7 +345,7 @@ ul.nav a:hover {
 	vertical-align: baseline;
 }
 
-.ticker h1 {
+.ticker h2 {
 	font-size: 36px;
 	font-weight: 700;
 	margin-bottom: 0px;
