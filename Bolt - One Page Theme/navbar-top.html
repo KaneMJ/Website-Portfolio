@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Denis Samardjiev" />
+	<meta name="description" content="LightningBolt - A minimal HTML5 theme">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+	<title>LightningBolt - A Minimal Responsive Parallax HTML5 Theme</title>
+
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<!-- jQuery Files -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+
+	<!-- Royal Preloader -->
+	<link rel="stylesheet" type="text/css" href="css/royal_preloader.css" />
+	<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+	<script type="text/javascript">
+
+		// Change to your image paths
+	    var images = {
+	    	'slide1':     		'http://aliensix.com/bolt1.3/fullscreen/img/slider/slide1.jpg',
+	    	'team-member1':     'http://aliensix.com/bolt1.3/fullscreen/img/team-member-1.jpg',
+	    	'team-member2':     'http://aliensix.com/bolt1.3/fullscreen/img/team-member-2.jpg',
+	        'branding1':     	'http://aliensix.com/bolt1.3/fullscreen/img/projects/branding1.jpg',
+	        'branding2':     	'http://aliensix.com/bolt1.3/fullscreen/img/projects/branding2.jpg',
+	        'branding3':    	'http://aliensix.com/bolt1.3/fullscreen/img/projects/branding3.jpg',
+	        'print1':  			'http://aliensix.com/bolt1.3/fullscreen/img/projects/print1.jpg',
+	        'print2':     		'http://aliensix.com/bolt1.3/fullscreen/img/projects/print2.jpg',
+	        'print3':   		'http://aliensix.com/bolt1.3/fullscreen/img/projects/print3.jpg',
+	        'web1':   			'http://aliensix.com/bolt1.3/fullscreen/img/projects/web1.jpg',
+	        'web2':   			'http://aliensix.com/bolt1.3/fullscreen/img/projects/web2.jpg',
+	        'web3':   			'http://aliensix.com/bolt1.3/fullscreen/img/projects/web3.jpg',
+	        'branding1thumb':   'http://aliensix.com/bolt1.3/fullscreen/img/projects/thumbs/branding1.jpg',
+	        'branding2thumb':   'http://aliensix.com/bolt1.3/fullscreen/img/projects/thumbs/branding2.jpg',
+	        'branding3thumb':   'http://aliensix.com/bolt1.3/fullscreen/img/projects/thumbs/branding3.jpg',
+	        'print1thumb':   	'http://aliensix.com/bolt1.3/fullscreen/img/projects/thumbs/print1.jpg',
+	        'print2thumb':   	'http://aliensix.com/bolt1.3/fullscreen/img/projects/thumbs/print2.jpg',
+	        'print3thumb':   	'http://aliensix.com/bolt1.3/fullscreen/img/projects/thumbs/print3.jpg',
+	        'web1thumb':   		'http://aliensix.com/bolt1.3/fullscreen/img/projects/thumbs/web1.jpg',
+	        'web2thumb':  		'http://aliensix.com/bolt1.3/fullscreen/img/projects/thumbs/web2.jpg',
+	        'web3thumb':   		'http://aliensix.com/bolt1.3/fullscreen/img/projects/thumbs/web3.jpg',
+	        'quote1':     		'http://aliensix.com/bolt1.3/fullscreen/img/quote/bg.jpg',
+	    };
+	 
+	    // config
+	    Royal_Preloader.config({
+	        mode:       'text',
+	        images:     images,
+	        timeout:    10,
+	        showInfo:   false,
+	        background: ['#272727']
+	    });
+	</script>
+
+	<!-- Icon Fonts -->
+	<link href='css/ionicons.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="royal_loader navoffset" data-spy="scroll" data-target="#myScrollSpy" data-offset="100">
+
+	<!-- Begin Hero -->
+	<div class="jumbotron hero clearfix" data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target=".ticker h1" style="background-image: url(img/slider/slide1.jpg);">
+
+		<!-- Content -->
+		<div class="container center-vertically">
+			<p>We are Bolt &amp; we like to <em>focus</em> on</p>
+			<div class="ticker">
+				<h1>Web + Dev</h1>
+				<h1>Mobile + UI</h1>
+				<h1>AI + Robot</h1>
+			</div>
+			<hr>
+			<a href="#" data-id="section2" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
+				Portfolio &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
+			</a>
+		</div>
+
+	</div>
+	<!-- End Hero -->
+
+	<!-- Begin Navigation -->
+	<div class="nav-main navbar navbar-fixed-top">
+
+		<div class="container">
+
+			<div class="navbar-header">
+
+				<!-- Brand -->
+				<a href="javascript:void(0);" class="navbar-brand scroll-top">
+					<span class="ion-ios7-bolt-outline logo-icon"></span>
+				</a>
+
+				<!-- Mobile Navigation -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="ion-navicon toggle-icon"></span>
+				</button>
+
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="navbar-collapse collapse navHeaderCollapse" id="myScrollSpy" role="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#section1" data-id="section1" class="scroll-link">Home</a></li>
+					<li><a href="#section2" data-id="section2" class="scroll-link">Portfolio</a></li>
+					<li><a href="#section3" data-id="section3" class="scroll-link">About</a></li>
+					<li><a href="#section4" data-id="section4" class="scroll-link">Team</a></li>
+					<li><a href="#section5" data-id="section5" class="scroll-link">Services</a></li>
+					<li><a href="#section6" data-id="section6" class="scroll-link">Contact</a></li>
+					<li><a href="features.html"><span class="ion-android-star"></span></a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+	</div>
+	<!-- End Navigation -->
+
+	<!-- Begin Summary -->
+	<section id="section1">
+	
+		<div class="summary">
+
+			<div class="container">
+
+				<!-- Content -->
+				<div class="row">
+					<div class="col-lg-10 col-lg-offset-1" >
+						<h3 data-scroll-reveal="enter left and move 50px over 1.2s">We create useable ui</h3>
+						<hr data-scroll-reveal>
+						<p data-scroll-reveal>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum mauris at sollicitudin lacinia. Vestibulum blandit nibh neque, id consequat mi vestibulum eu. Suspendisse potenti. Ut ac consequat nulla. Praesent tristique eleifend tincidunt.</p>
+						<a data-scroll-reveal="enter right and move 50px over 1.2s" href="#" data-id="section3" class="btn btn-default bolt-button-dark scroll-link">
+							About us &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+	<!-- End Summary -->
+
+	<!-- Begin Portfolio -->
+	<section id="section2">
+
+		<div class="container portfolio">
+
+			<!-- Page Title -->
+			<div class="row page-title-2">
+				<div class="col-lg-12">
+					<h3>Portfolio</h3>
+					<hr>
+					<p>We also create some other stuff.</p>
+				</div>
+			</div>
+
+			<!-- Portfolio Filter -->
+			<div data-scroll-reveal="enter left and move 50px over 1s" class="container text-center">
+			  <ul class="nav nav-pills">
+			    <li class="filter" data-filter="all">all</li>
+			    <li class="filter" data-filter="print">print</li>
+			    <li class="filter" data-filter="web">web</li>
+			    <li class="filter" data-filter="branding">branding</li>
+			    <li class="filter" data-filter="illustrations">illustrations</li>
+			  </ul>
+			</div>
+
+			<!-- Portfolio Items -->
+			<div class="container port-holder">
+			  <ul id="myPortfolio" class="no-padding">
+			    <li class="item branding col-xs-4 no-padding">
+			    	<a data-toggle="modal" href="projects/project-1.html" data-target="#myModal">
+						<img src="img/projects/thumbs/branding1.jpg" alt="..." />
+						<span class="portfolio-hover">
+						  <span>
+						  	<span class="portfolio-title">Beach Sand</span><br>
+						  	<span class="portfolio-category">Branding</span>
+						  </span>
+						</span>
+					</a>
+			    </li>
+			    <li class="item web col-xs-4 no-padding">
+			    	<a data-toggle="modal" href="projects/project-2.html" data-target="#myModal">
+						<img src="img/projects/thumbs/web1.jpg" alt="..." />
+						<span class="portfolio-hover">
+						  <span>
+						  	<span class="portfolio-title">B&amp;W Scene</span><br>
+						  	<span class="portfolio-category">Web Design</span>
+						  </span>
+						</span>
+					</a>
+			    </li>
+			    <li class="item print col-xs-4 no-padding">
+			    	<a data-toggle="modal" href="projects/project-3.html" data-target="#myModal">
+						<img src="img/projects/thumbs/print1.jpg" alt="..." />
+						<span class="portfolio-hover">
+						  <span>
+						  	<span class="portfolio-title">Metal</span><br>
+						  	<span class="portfolio-category">Print</span>
+						  </span>
+						</span>
+					</a>
+			    </li>
+			    <li class="item branding illustrations col-xs-4 no-padding">
+			    	<a data-toggle="modal" href="projects/project-4.html" data-target="#myModal">
+						<img src="img/projects/thumbs/branding2.jpg" alt="..." />
+						<span class="portfolio-hover">
+						  <span>
+						  	<span class="portfolio-title">Bridge Cityscape</span><br>
+						  	<span class="portfolio-category">Branding + Illustrations</span>
+						  </span>
+						</span>
+					</a>
+			    </li>
+			    <li class="item print col-xs-4 no-padding">
+			    	<a data-toggle="modal" href="projects/project-5.html" data-target="#myModal">
+						<img src="img/projects/thumbs/print2.jpg" alt="..." />
+						<span class="portfolio-hover">
+						  <span>
+						  	<span class="portfolio-title">Camera</span><br>
+						  	<span class="portfolio-category">Print</span>
+						  </span>
+						</span>
+					</a>
+			    </li>
+			    <li class="item branding col-xs-4 no-padding">
+			    	<a data-toggle="modal" href="projects/project-6.html" data-target="#myModal">
+						<img src="img/projects/thumbs/branding3.jpg" alt="..." />
+						<span class="portfolio-hover">
+						  <span>
+						  	<span class="portfolio-title">B&amp;W City</span><br>
+						  	<span class="portfolio-category">Branding</span>
+						  </span>
+						</span>
+					</a>
+			    </li>
+			    <li class="item web col-xs-4 no-padding">
+			    	<a data-toggle="modal" href="projects/project-7.html" data-target="#myModal">
+						<img src="img/projects/thumbs/web2.jpg" alt="..." />
+						<span class="portfolio-hover">
+						  <span>
+						  	<span class="portfolio-title">Objects</span><br>
+						  	<span class="portfolio-category">Web Design</span>
+						  </span>
+						</span>
+					</a>
+			    </li>
+			    <li class="item print illustrations col-xs-4 no-padding">
+			    	<a data-toggle="modal" href="projects/project-8.html" data-target="#myModal">
+						<img src="img/projects/thumbs/print3.jpg" alt="..." />
+						<span class="portfolio-hover">
+						  <span>
+						  	<span class="portfolio-title">Paradise</span><br>
+						  	<span class="portfolio-category">Print + Illustrations</span>
+						  </span>
+						</span>
+					</a>
+			    </li>
+			    <li class="item web illustrations col-xs-4 no-padding">
+			    	<a data-toggle="modal" href="projects/project-9.html" data-target="#myModal">
+						<img src="img/projects/thumbs/web3.jpg" alt="..." />
+						<span class="portfolio-hover">
+						  <span>
+						  	<span class="portfolio-title">Eary</span><br>
+						  	<span class="portfolio-category">Web + Illustrations</span>
+						  </span>
+						</span>
+					</a>
+			    </li>
+			  </ul>
+			</div>
+
+		</div>
+
+	</section>
+	<!-- End Portfolio -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog" aria-hidden="true">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-body"></div>
+	        </div> <!-- /.modal-content -->
+	    </div> <!-- /.modal-dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Begin Call to Action -->
+	<div class="cta">
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-1">
+					<p>
+						Interested in working with us?
+					</p>
+				</div>
+				<div class="col-lg-2">
+					<a href="#" data-id="section6" class="btn btn-default bolt-button-cta scroll-link">
+						Contact
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<p>
+						Ready when you are.
+					</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- End Call to Action -->
+
+	<!-- Begin About Us -->
+	<section id="section3">
+
+		<div class="about">
+
+			<div class="container">
+
+				<div class="row">
+
+					<!-- Page Title -->
+					<div class="col-lg-10 col-lg-offset-1 page-title-2">
+						<h3>About</h3>
+						<hr>
+						<p>A passionate team of creative &amp; innovative minds.</p>
+					</div>
+
+					<!-- Who We Are-->
+					<div data-scroll-reveal="enter top and move 50px over 1.2s" class="col-sm-4 col-sm-offset-1">
+						<h5>Who We Are</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi.</p>
+					</div> 
+
+					<!-- Goals -->
+					<div data-scroll-reveal="enter bottom and move 50px over 1.2s" class="col-sm-6">
+						<h5>Goals</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum mauris at sollicitudin lacinia. </p>
+					</div>
+
+					<!-- The Team -->
+					<div data-scroll-reveal="enter bottom and move 50px over 1.2s" class="col-sm-10 col-sm-offset-1">
+						<h5>The Team</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum mauris at sollicitudin lacinia. Vestibulum blandit nibh neque, id consequat mi vestibulum eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. </p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+	<!-- End About Us -->
+
+	<!-- Begin Team -->
+	<section id="section4">
+
+		<div class="team">
+
+			<div class="container">
+
+				<div class="row">
+
+					<!-- Page Title -->
+					<div class="col-lg-10 col-lg-offset-1 page-title">
+						<h3>The Team</h3>
+						<hr>
+						<p>Small, but an <b>effective weapon</b>.</p>
+					</div>
+
+					<div id="content-holder">
+
+						<!-- Team Member 1 -->
+						<div data-scroll-reveal="enter top and move 50px over 1s" class="col-sm-4 col-sm-offset-2 team-member-holder">
+							<img src="img/team-member-1.jpg" alt="...">
+							<div class="team-info-holder">
+								<h3 class="team-name">Johnathan Adams</h3>
+								<p class="team-job">Developer</p>
+							</div>
+							<div class="team-about">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum in mauris at sollicitudin lacinia vici veni vidi.
+								<div style="padding-top:15px;">
+									<div class="social-icon-holder">
+						                <a href="#"><span class="ion-social-twitter social-icon"></span></a>
+						            </div>
+						            <div class="social-icon-holder">
+						                <a href="#"><span class="ion-social-facebook social-icon"></span></a>
+						            </div>
+						            <div class="social-icon-holder">
+						                <a href="#"><span class="ion-social-dribbble social-icon"></span></a>
+						            </div>
+					            </div>
+							</div>
+						</div>
+
+						<!-- Team Member 2 -->
+						<div data-scroll-reveal="enter bottom and move 50px over 1s" class="col-sm-4 team-member-holder">
+							<img src="img/team-member-2.jpg" alt="...">
+							<div class="team-info-holder">
+								<h3 class="team-name">Steven Adams</h3>
+								<p class="team-job">Designer</p>
+							</div>
+							<div class="team-about">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum in mauris at sollicitudin lacinia vici veni vidi.
+								<div style="padding-top:15px;">
+									<div class="social-icon-holder">
+						                <a href="#"><span class="ion-social-twitter social-icon"></span></a>
+						            </div>
+						            <div class="social-icon-holder">
+						                <a href="#"><span class="ion-social-facebook social-icon"></span></a>
+						            </div>
+						            <div class="social-icon-holder">
+						                <a href="#"><span class="ion-social-dribbble social-icon"></span></a>
+					            	</div>
+					            </div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+	<!-- End Team -->
+
+	<!-- Begin Services -->
+	<section id="section5">
+
+		<div class="services">
+
+			<div class="container">
+
+				<div class="row">
+
+					<!-- Page Title -->
+					<div class="col-lg-10 col-lg-offset-1 page-title-2">
+						<h3>Services</h3>
+						<hr>
+						<p>We can help you with a variety of projects.</p>
+					</div>
+
+					<div class="col-lg-6 col-lg-offset-3" style="text-align: center;">
+
+						<!-- Nav --> 
+						<ul class="nav nav-tabs" style="display:inline-block;">
+						  <li class="active">
+							  	<a href="#design" data-toggle="tab">
+							  		<div class="services-icon-holder">
+							  			<span class="ion-ios7-browsers-outline services-icon"></span>
+							  			<p>Design</p>
+							  		</div>
+							  	</a>
+						  </li>
+						  <li>
+							  	<a href="#eshop" data-toggle="tab">
+							  		<div class="services-icon-holder">
+							  			<span class="ion-ios7-cart-outline services-icon"></span>
+							  			<p>eShop</p>
+							  		</div>
+							  	</a>
+						  </li>
+						  <li>
+							  	<a href="#social" data-toggle="tab">
+							  		<div class="services-icon-holder">
+							  			<span class="ion-ios7-chatbubble-outline services-icon"></span>
+							  			<p>Social</p>
+							  		</div>
+							  	</a>
+						  </li>
+						  <li>
+							  	<a href="#stats" data-toggle="tab">
+							  		<div class="services-icon-holder">
+							  			<span class="ion-arrow-graph-up-right services-icon"></span>
+							  			<p>Stats</p>
+							  		</div>
+							  	</a>
+						  </li>
+						  <li>
+							  	<a href="#photo" data-toggle="tab">
+							  		<div class="services-icon-holder">
+							  			<span class="ion-ios7-camera-outline services-icon"></span>
+							  			<p>Photo</p>
+							  		</div>
+							  	</a>
+						  </li>
+						  <li>
+							 	<a href="#cloud" data-toggle="tab">
+							 		<div class="services-icon-holder">
+							 			<span class="ion-ios7-cloud-outline services-icon"></span>
+							 			<p>Cloud</p>
+							  		</div>
+							 	</a>
+						  </li>
+						</ul>
+
+					</div>
+
+					<!-- Content -->
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="tab-content">
+						  <div class="tab-pane fade active in" id="design">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum in mauris at sollicitudin lacinia. Vestibulum blandit nibh neque, id consequat mi vestibulum eu. Lorem ipsum dolor sit zyzz.</div>
+						  <div class="tab-pane fade" id="eshop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eros velit, lobortis id odio sed, elementum vestibulum justo. Praesent nec leo leo. Nulla vel volutpat nunc, eget lobortis velit. Nunc facilisis augue risus, eget tristique lorem vehicula vel.</div>
+						  <div class="tab-pane fade" id="social">Maecenas id enim at mauris aliquet aliquet. Nunc gravida venenatis urna quis mollis. Integer eget eros condimentum augue dapibus faucibus. Donec placerat nulla nec nisi sodales, nec ullamcorper nunc luctus. Aliquam erat volutpat.</div>
+						  <div class="tab-pane fade" id="stats">Nunc rhoncus gravida turpis nec scelerisque. Cras hendrerit vitae diam eget pharetra. Nam quam lacus, dignissim sed metus non, egestas gravida magna. Vivamus mattis vulputate lectus non faucibus. Pellentesque interdum nisza.</div>
+						  <div class="tab-pane fade" id="photo">Nullam hendrerit tellus vitae nisi pulvinar, eu faucibus ligula sollicitudin. Aenean lacinia imperdiet orci eu posuere. Quisque volutpat lacus vitae sollicitudin volutpat. Nunc pharetra quis lorem elementum mattis. Nulla nibh nunc.</div>
+						  <div class="tab-pane fade" id="cloud">Integer ultricies convallis blandit. Ut in volutpat velit. Nam ac tempor turpis. Donec at leo dignissim, tincidunt urna nec, aliquet est. Vivamus mi odio, adipiscing vel aliquam in, viverra vitae sapien. Integer sagittis nisl quis purus matti.</div>
+						</div> 
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+	<!-- End Services -->
+
+	<!-- Begin Quote -->
+	<div class="quote" data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target=".quote-content">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-lg-12">
+					<p data-scroll-reveal="enter top and move 50px over 1s" class="quote-content">
+						It takes 20 years to build a reputation and five minutes to ruin it. If you think about that, you'll do things differently.
+					</p>
+					<a data-scroll-reveal="enter bottom and move 50px over 1s" href="#" data-id="section3" class="btn btn-default bolt-quote-name">- Warren Buffett</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- End Quote -->
+
+	<!-- Begin Contact -->
+	<section id="section6">
+
+		<div class="contact">
+
+			<div class="container">
+
+				<!-- Page Title -->
+				<div class="col-lg-10 col-lg-offset-1 page-title">
+					<h3>Contact</h3>
+					<hr>
+					<p>Get in touch with us, for business or a quick hello!</p>
+				</div>
+
+				<!-- Address -->
+				<div class="col-md-5 col-md-offset-1">
+					<p class="contact-info">
+						<a href="https://www.google.com/maps/@36.125,-115.175,11z" target="_blank"><em>400 N. 3rd Street, New York, NY, 10003 USA</em></a>
+					</p>
+				</div>
+
+				<!-- Phone Number -->
+				<div class="col-md-2">
+					<p class="contact-info">+17004234215</p>
+				</div>
+
+				<!-- Email -->
+				<div class="col-md-3">
+					<p class="contact-info-email"><a href="mailto:ineedtotalktoyou@bolt.com"><em>ineedtotalktoyou@bolt.com</em></a></p>
+				</div>
+
+				<!-- Form -->
+				<form name="contactform" method="post" action="php/mailer.php" class="form-horizontal" role="form">
+
+					<div data-scroll-reveal="enter top and move 50px over 1.5s" class="col-md-5">
+						<div class="form-group">
+							<div class="col-md-12">
+								<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Name">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-12">
+								<input type="text" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-12">
+								<input type="text" class="form-control" id="inputSubject" name="inputSubject" placeholder="Subject">
+							</div>
+						</div>
+					</div>
+					
+					<div data-scroll-reveal="enter bottom and move 50px over 1.5s" class="col-md-7" >
+						<div class="form-group">
+							<div class="col-md-12">
+								<textarea class="form-control form-control-message" rows="5" id="inputMessage" name="inputMessage" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<div data-scroll-reveal="enter bottom and move 50px over 1.7s" class="form-group">
+							<div class="col-md-12">
+								<button type="submit" class="btn btn-default bolt-button-send">
+									Send
+								</button>
+							</div>
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+
+	</section>
+	<!-- End Contact -->
+
+	<!-- Begin Footer -->
+	<footer id="footer">
+
+		<div class="container">
+			
+			<!-- Copyright And Social -->
+			<div class="col-sm-5">
+				<p class="copyright no-margin">Copyright © Bolt - Rights Reserved</p>
+			</div>
+
+			<!-- Go To Top -->
+			<div class="col-sm-3 text-center">
+				<p class="no-margin" style="text-align: center"><span class="ion-ios7-arrow-up up-icon scroll-top" style="display: inline-block;"></span></p>
+			</div>
+
+			<!-- Love -->
+			<div class="col-sm-4 made-with-love">
+				<p class="no-margin">Made with &nbsp;<span class="ion-ios7-heart heart-icon"></span>&nbsp; in Las Vegas.</p>
+			</div>
+
+		</div>
+
+	</footer>
+	<!-- End Footer --> 
+
+	<!-- Javascript Files -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="js/portfolio.js"></script>
+	<script type="text/javascript" src="js/navbar-top.js"></script>
+	<script type="text/javascript" src="js/ticker.js"></script>
+	<script type="text/javascript" src="js/modal-fix.js"></script>
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+	<script type="text/javascript" src="js/start-skrollr.js"></script>	
+	<script type="text/javascript" src="js/scrollReveal.js"></script>
+	<script type="text/javascript">
+		window.scrollReveal = new scrollReveal();
+		//activate scrollReveal.js
+	</script>
+</body>
+</html>

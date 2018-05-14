@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Lightning Bolt Documentation - v1.3</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="assets/jquery.snippet.css">
+	<script src="assets/jquery.snippet.js"></script>
+	<script>
+	$(document).ready(function () {
+	    $("pre.htmlCode").snippet("html",{style:"bright"});
+	    $("pre.styles").snippet("css",{style:"rand01"});
+	    $("pre.php").snippet("php",{style:"acid"});
+	    $("pre.javascript").snippet("javascript",{style:"typical"});
+	});
+	</script>
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">A Multi-purpose Theme</h3>
+		
+		<hr>
+		
+		<h1 class="center">Lightning Bolt Documentation</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Released: 05/01/14<br>
+					By: Denis Samardjiev<br>
+					Email: <a href="mailto:dimitrovinc@outlook.com">dimitrovinc@outlook.com</a><br>
+					Version: v1.3
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via the email on the left. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#php">PHP</a></li>
+			<li><a href="#header">Header & Navbar</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#team">Team & Services</a></li>
+			<li><a href="#parallax">Parallax & Scroll Reveal</a></li>
+			<li><a href="#sliders">Sliders</a></li>
+			<li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<p><a href="shortcodes.html">Shortcodes Page</a></p>
+
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme has 6 pages, 4 onepage versions that can be cuztomized to your liking, and a features page with some components.
+
+		<p>Below is the HTML structure of the summary section, as an example. A simple 12 column text section with a title and a button.</p>
+
+		<pre class="htmlCode">
+		&lt;!-- Begin Summary --&gt;
+		&lt;section id="section1"&gt;
+
+			&lt;div class="summary"&gt;
+
+				&lt;div class="container"&gt;
+
+					&lt;!-- Content --&gt;
+					&lt;div class="row"&gt;
+						&lt;div class="col-lg-10 col-lg-offset-1" &gt;
+							&lt;h3 data-scroll-reveal="enter left and move 50px over 1.2s"&gt;Title&lt;/h3&gt;
+							&lt;hr data-scroll-reveal="enter left"&gt;
+							&lt;p data-scroll-reveal&gt;Content&lt;/p&gt;
+							&lt;a data-scroll-reveal="enter right and move 50px over 1.2s" href="#" data-id="section3" class="btn btn-default bolt-button-dark scroll-link"&gt;
+								Button &nbsp;&nbsp;&lt;span class="ion-ios7-arrow-down"&gt;&lt;/span&gt;
+							&lt;/a&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+		&lt;/section&gt;
+		&lt;!-- End Summary --&gt;</pre>
+
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using 1 CSS file in this theme, which controls all of the styles besides royal_preloader.css (the image preloader untilized before you get to the theme main page) and ionicons.css (the icon fonts I used.) We of course also have the bootstrap css files. This is also not counting the onepage style.css files, which the only difference is some menu fixes.</p> 
+
+		<p>The main CSS file, style.css is separated into sections using this format:</p>  
+
+		<pre class="styles">
+		/* =Table of Contents
+		--------------------------------------------------------------
+			=Common Styles
+			=Typography
+		*/
+
+		/* =Common Styles
+		-------------------------------------------------------------- */
+		css code
+
+		/* =Typography
+		-------------------------------------------------------------- */
+		css code
+		</pre>
+		
+		<p><br>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate class that needs to be edited. You can also use your browsers inspect element function to find the class that you need to customize.</p> 
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>No javascript files have to be customized for the theme to function, there is only the royal preloader script in the head tag which you will have to change to your own image paths. All animation and parallax is done in the HTML file with fairly simple code, which is explained in the section below.</p>
+		
+		<ol>
+			<li>bootstrap.min.js - <em class="quiet small">Bootstrap .js file</em></li>
+			<li>jquery.easing.min.js - <em class="quiet small">Required for portfolio sorting</em></li>
+			<li>jquery.mixitup.min.js - <em class="quiet small">Mixitup sorting plugin, equired for portfolio sorting - <a href="https://github.com/patrickkunka/mixitup">Documentation</a></em></li>
+			<li>portfolio.js - <em class="quiet small">Runs mixitup sorting plugin</em></li>
+			<li>navbar.js - <em class="quiet small">Smooth scroll links + a navbar fix</em></li>
+			<li>ticker.js - <em class="quiet small">Ticker in full screen hero section</em></li>
+			<li>modal-fix.js - <em class="quiet small">(no editing)</em></li>
+			<li>skrollr.min.js - <em class="quiet small">Skrollr Parallax + animation plugin - <a href="https://github.com/Prinzhorn/skrollr">Documentation</a></em></li>
+			<li>start-skrollr.js - <em class="quiet small">Runs Skrollr</em></li>	
+			<li>scrollReveal.js - <em class="quiet small">Animates elements into the viewport - <a href="https://github.com/julianlloyd/scrollReveal.js">Documentation</a></em></li>
+			<li>royal_preloader.min.js - <em class="quiet small">The image preloader</em></li>
+		</ol>
+
+		<hr>
+
+		<h3 id="php"><strong>D) PHP</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The only PHP used in this template is for the contact form, which is fairly simple to edit and labled as well. There only 2 values you need to change for the form to function: </p>
+
+		<pre class="php">
+			$myemail = "your email here";
+			header('Location: http://linkofyourthankyoupage.com/thankyou.html');</pre>
+
+		<hr>
+
+		<h3 id="header"><strong>E) Header & Navbar</strong> - <a href="#toc">top</a></h3>
+		
+		<p>In the header of the site we have a couple of important items, first we have the favicon and apple touch icons. You can replace these with your own files but make sure you keep the names / directory the same:
+
+		<pre class="htmlCode">
+			&lt;link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /&gt;
+			&lt;link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png"&gt;
+			&lt;link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png"&gt;
+			&lt;link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png"&gt;
+			&lt;link rel="apple-touch-icon" href="apple-touch-icon.png"&gt;</pre><br>
+		
+		<p>We also have our fonts which are Montserrat and Open Sans, jquery 1.9.1 is loaded, our preloader files which are royal_preloader.css and royal_preloader.min.js, and the preloader script which you will have to change to your own image paths. Which looks like:</p>
+
+		<pre class="javascript">
+			&lt;script type="text/javascript"&gt;
+
+				// Change to your image paths
+			    var images = {
+			    	'slide1':     		'http://aliensix.com/bolt1.3/onepage-static/backgrounds/bg.jpg',
+			    	'slide2':     		'http://aliensix.com/bolt1.3/onepage-static/img/backgrounds/bg2.jpg',
+			    	'slide3':     		'http://aliensix.com/bolt1.3/onepage-static/img/backgrounds/bg3.jpg',
+			    };
+			 
+			    // config
+			    Royal_Preloader.config({
+			        mode:       'text',
+			        images:     images,
+			        timeout:    10,
+			        showInfo:   false,
+			        background: ['#272727']
+			    });
+
+			&lt;/script&gt;</pre><br>
+
+		<p>Also our custom icon fonts called ionicons (<a href="http://ionicons.com/cheatsheet.html">cheatsheet here</a>) are loaded below the preloader script. You also have the Bootstrap icon fonts available as well (<a href="http://getbootstrap.com/components/">cheatsheet here</a>) which are already built in. In the <i>&lt;head&gt;</i> tag, you do not have to change anything but the title, image paths, favicons, and apple touch icons. This is the same on every page.</p>
+
+		<p>On the full site version each page has a parallax header, which can adjusted easily inside the HTML markup. Portfolio page header:</p>
+
+		<pre class="htmlCode">
+		&lt;!-- Begin Page Header // change style bg image class to your image --&gt;
+		&lt;div class="fill-fixed single-page-header" style="background-image:url('img/backgrounds/bg.jpg');" data-top-bottom="background-position: 50% 0px;" data-bottom-top="background-position: 50% -300px;" data-anchor-target=".single-page-header h1"&gt;
+
+			&lt;div class="container"&gt;
+
+				&lt;div class="row"&gt;
+
+					&lt;div class="col-lg-12 text-center"&gt;
+						&lt;h1&gt;
+							There 4 different portfolio options
+						&lt;/h1&gt;
+						&lt;p&gt;They are all easy to use on any layout just copy HTML from page, and paste where you need.&lt;/p&gt;
+					&lt;/div&gt;
+
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+		&lt;!-- End Page Header --&gt;</pre><br>
+
+		<p>Simply change: <b>style="background-image:url('img/backgrounds/yourimage.jpg');</b> to your image, and adjust the h1 title and paragraph accordingly. You can align text on the left, right, or center. Using "text-left" "text-right" and "text-center" bootstrap classes.</p>
+
+		<p>After you are done setting up your pages you will need to match up the navigation on each page, simply copy the whole html code starting with <i>&lt;-- Begin Navigation --&gt;</i> and ending with <i>&lt;-- End Navigation --&gt;</i> and replace it on each page.</p>
+		
+		<hr>
+
+		<h3 id="portfolio"><strong>F) Portfolio</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The portfolio section is very flexible. Columns can be adjusted easily if further customization is needed. The portfolio uses <a href="https://github.com/patrickkunka/mixitup">mixitup</a> to sort the projects and the bootstrap modal feature to show more details on the project. You will have to update the individual project files and change 2 sets of images (a thumbnail and a fullsize version of the project), as well as change the markup in your portfolio html page (portfolio.html) for example, and change the filters to your own categories.</p>
+
+		<p>The project files are located in <i>projects/project-1.html</i> and so on. You can change the content for each project in the modal here. The modal is extremely flexible and can be adjusted to your needs easily.</p>
+
+		<p>You can keep the directories the same when you change the images to make it easier. The images are located in:</p>
+
+	<pre class="htmlCode">
+		img/projects
+		img/projects/thumbs</pre><br>
+
+		<p>The filters are labled "Portfolio Filters" in the HTML markup and can be changed accordingly there. You will just have to match up the filters: <b>data-filter="web"</b> with each portfolio item: <b>li class="item web"</b> the category is the class after <b>item</b>.
+
+		The portfolio is very flexible and you can add as many portfolio items and filters as you need.</p>
+
+		<hr>
+
+		<h3 id="services"><strong>G)Team & Services</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The team section is pretty simple to customize and very flexible. It comes premade with 4 and 2 members, but can be adjusted easily to hold as many members as you need. You can also use the social icons from the team section anywhere on the theme. Just copy the markup and place it where you need the icons. You can use the <a href="http://ionicons.com/cheatsheet.html">ionicons cheatsheet</a> to change the icons as well.<br><br>Simply copy the team HTML markup from the features.html page and paste it wherever you need.</p>
+
+		<hr>
+
+		<h3 id="parallax"><strong>H) Parallax & Scroll Reveal</strong> - <a href="#toc">top</a></h3>
+
+		<p>The animations fading the content into the screen as you scroll are controlled by <a href="https://github.com/julianlloyd/scrollReveal.js">scrollReveal.js</a> and are also customized in the HTML, again extremely simple to customize as you can see in the 2nd screen capture. The code below controls how the column will fade into view, for example.</p>
+
+		<pre class="htmlCode">
+		&lt;div data-scroll-reveal="enter top and move 50px over 1s" class="col-sm-4"&gt;</pre><br>
+
+		<p>You can also just simplify it:</p>
+
+		<pre class="htmlCode">
+		&lt;div data-scroll-reveal="enter top" class="col-sm-4"&gt;</pre><br>
+
+		<p>The <a href="https://github.com/julianlloyd/scrollReveal.js">scrollReveal.js Documentation</a> will cover a lot of these options, if you are looking to go above and beyond</p>
+
+		<p>Parallax features are controlled by <a href="https://github.com/Prinzhorn/skrollr">skrollr.js</a> and can be customized in the HTML easily. Skrollr also has other features that you can incorporate into this theme as well. Parallax can be added to sections easily by using the code below inside of the div element that has your background image.</p>
+
+		<p>The example below triggers the parallax image "img/backgrounds/bg.jpg" to parallax when the viewport is at the h1 tag inside of col-lg-12. Parallax can be added to anything and is done the same way as below, the <a href="https://github.com/Prinzhorn/skrollr">skrollr.js Documentation</a> will help you in customizing parallax further if needed.</p>
+
+		<pre class="htmlCode">
+		&lt;div class="col-lg-12" 
+		style="background-image:url('img/backgrounds/bg.jpg');padding:150px 0 150px 0;" 
+		data-top-bottom="background-position: 50% 0px;" 
+		data-bottom-top="background-position: 50% -200px;" 
+		data-anchor-target=".col-lg-12 h1"&gt;</pre><br>
+
+		<p>Your data anchor target should be the point of which you want the parallax to start. This <a href="http://ihatetomatoes.net/simple-parallax-scrolling-tutorial/">tutorial</a> uses the same method for parallax as this template as well if this seems confusing.</p>
+		
+		<hr>
+
+		<h3 id="sliders"><strong>H) Sliders</strong> - <a href="#toc">top</a></h3>
+
+		<p>There are 3 diffferent sliders available, which are all easily added to and customized. We have a fullscreen slider, a full width fixed slider, and a fully fixed slider which can be adjusted to any height and width you need inside of your content.<br><br>Every carousel besides the fully fixed one has parallax preinstalled. Check out this example of a carousel item with parallax:</p>
+
+		<pre class="htmlCode">
+		&lt;div class="item"&gt;
+			&lt;div class="fill" 
+
+			style="background-image:url('img/backgrounds/bg2.jpg');" 
+			data-top-bottom="background-position: 50% 0px;"
+			data-bottom-top="background-position: 50% -200px;" 
+			data-anchor-target="#homeFixedCarousel h1"&gt;
+
+				&lt;div class="container center-vertically-left"&gt;
+					&lt;div class="carousel-description col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3"&gt;
+						All required pages for a full site
+						&lt;h1 class="carousel-title"&gt;Multiple Choices&lt;/h1&gt;
+						&lt;p class="small"&gt;Sections can be added just by copying and pasting the HTML. New pages are also easily created using the same method.&lt;/p&gt;
+						Lightning bolt has everything you need for your next project, with over &lt;b&gt;20 Pages&lt;/b&gt; packed with content, this is a really efficient multi-purpose template. Look around :)&lt;br&gt;
+						&lt;a href="features.html" class="btn btn-default bolt-button-light" style="margin-top:20px;"&gt;
+							Features &nbsp;&nbsp;&lt;span class="ion-ios7-arrow-right"&gt;&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;</pre><br>
+
+		<p>The only thing you need to change on sliders is the background-image and of course the content. Line 4 would be the background-image and <i>line 5, 6, and 7</i> control the parallax. You can align content to the left, right, or center. Just use these classes accordingly:</p>
+
+		<pre class="htmlCode">
+		center-vertically
+		center-vertically-left
+		center-vertically-right</pre><br>
+		
+		<p>For example, in the item above you would simply change line 9 with one of the classes above.</p>
+
+		<hr>
+		
+		<h3 id="psdFiles"><strong>I) PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've included one psd with this theme, which has the original onepage concept design.</p>
+		
+			<ol>
+				<li>template.psd</li>
+
+			</ol>
+		
+		<p>If you'd like to change anything just open up template.psd and navigate to the desired group in the .psd and find the layer you want to edit. Then make the desired changes. The file is organized so edits will be fairly easy.</p> 
+				
+		<hr>
+
+		<h3 id="credits"><strong>J) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, graphics or other files as listed.</p>
+		
+		<ul>
+			<li><a href="http://getbootstrap.com/">Bootstrap 3</a></li>
+			<li><a href="https://github.com/Prinzhorn/skrollr">Skrollr</a></li>
+			<li><a href="https://github.com/julianlloyd/scrollReveal.js">ScrollReveal</a></li>
+			<li><a href="http://codecanyon.net/item/melonhtml5-royal-preloader/3746554">Royal Preloader</a></li>
+			<li><a href="http://littlevisuals.co/">LittleVisuals.co</a></li>
+			<li><a href="https://dribbble.com/shots/1288319-Apple-flat-devices-EPS-PSD">iMac Vector</a></li>
+			<li><a href="https://github.com/patrickkunka/mixitup">Mixitup</a></li>
+			<li><a href="http://ionicons.com/">ionicons</a>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p> 
+		
+		<p class="append-bottom alt large"><strong>- Denis Samardjiev</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
