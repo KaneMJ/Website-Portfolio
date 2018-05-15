@@ -99,7 +99,7 @@ h3 {
 }
 
 h4 {
-	font-size: 1.8em;
+	font-size: 1.4em;
 	text-transform: uppercase;
 }
 
@@ -961,84 +961,13 @@ span.portfolio-hover span {
 	transition: color 0.5s ease;
 }
 
-/* =Services
+/* =Skills
 -------------------------------------------------------------- */
-.services { padding:120px 0 120px 0; background-color: #f1f1f1; }
+.services { padding:120px 0 120px 0; background-color:white; }
 
-.services-icon-holder {
-	border: 2px solid #272727;
-	border-radius: 50%;
-	width: 65px;
-	height: 65px;
-	margin-bottom: 40px;
-}
-
-.services-icon-holder:hover {
-	background-color: #272727;
-	cursor: pointer;
-}
-
-.services-icon {
-	font-size: 28px;
-	color: #272727;
-	line-height: 2.2 !important;
-	padding-bottom: 15px;
-}
-
-.services-icon-holder:hover .services-icon {
-	color: #f1f1f1;
-	cursor: pointer;
-	-webkit-transition: color 0.5s ease;
-	-moz-transition: color 0.5s ease;
-	-o-transition: color 0.5s ease;
-	transition: color 0.5s ease;
-}
-
-.services .nav > li.active > a .services-icon-holder {
-   background-color: #272727;
-   cursor: pointer;
-}
-
-.services .nav > li.active > a .services-icon {
-   color: #fff;
-   cursor: pointer;
-}
-
-.services .nav li.active:after { 
-    content: "\f155";
-    font-family: Ionicons;
-    font-style: normal;
-    margin-top: 15px;
-    font-size: 28px;
-    font-weight: normal;
-    text-decoration: inherit;
-	display: inline-block;
-}
-
-.services .nav-tabs {
-	border-bottom: none;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	text-align: center;
-}
-
-.services .nav > li > a {
-	border: none;
-	color: #272727;
-	padding: 25px 10px 20px 10px;
-	outline: none ! important;
-}
-
-.services .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
-	background-color: transparent;
-	border: none;
-	border-bottom: none;
-	color: #272727;
-}
-
-.services .tab-pane {
-	text-align: center;
-	padding-top: 25px;
+.logos img {
+	width: 120px;
+	margin-left: 5px;
 }
 
 .fade {
@@ -1135,6 +1064,10 @@ span.portfolio-hover span {
 /* =Contact
 -------------------------------------------------------------- */
 .contact { padding:120px 0 120px 0; }
+
+.contactArea h4 {
+	color: black;
+}
 
 .contact-info {
 	text-align: center;
