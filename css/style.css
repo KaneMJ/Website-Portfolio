@@ -655,6 +655,10 @@ hr {
 .left-link {
 	float: left;
 }
+
+.footerLinks {
+	color: blue;
+}
 .bolt-button-cta {
 	border-radius: 0;
 	border: 2px solid #fff;
