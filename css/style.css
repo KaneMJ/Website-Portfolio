@@ -48,6 +48,10 @@ body a {
 	color: #969696;
 }
 
+.modal-text {
+	color: black;
+}
+
 body a:hover {
 	color: #000;
 	text-decoration: none;
