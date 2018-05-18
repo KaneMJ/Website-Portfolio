@@ -15,6 +15,12 @@ $(document).ready(function() {
         event.preventDefault();
         $('#main-nav').toggleClass("open");
     });
+    $(window).on('click', function(event) {
+        event.preventDefault();
+        if($('.navbar-collapse').hasClass('in')){    
+            $('.navbar-collapse').collapse('toggle');
+        }
+    });
 });
 
 // scroll function
@@ -35,6 +41,9 @@ $(function () {
         ghostElHeight = 0;
     
     $(document).on( 'scroll', function(){
+        if($('.navbar-collapse').hasClass('in')){    
+            $('.navbar-collapse').collapse('toggle');
+        }
 
         if($(window).scrollTop()>=$(".jumbotron").outerHeight())
         {

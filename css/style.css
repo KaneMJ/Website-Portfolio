@@ -305,6 +305,10 @@ ul.nav a:hover {
 	padding: 15px 0;
 }
 
+.name-text, .title-text {
+	text-shadow: 2px 4px 3px rgba(0,0,0, .4);
+}
+
 .dropdown-menu>li>a {
 	display: block;
 	padding: 3px 20px;
@@ -643,7 +647,7 @@ hr {
 
 /* =Call to Action
 -------------------------------------------------------------- */
-.cta { padding:50px 0 50px 0; background-color:#d1d1d1; text-align:center; }
+.cta { padding:50px 0 50px 0; background-color:#777777; text-align:center; }
 
 .cta p {
 	color: #fff;
@@ -656,7 +660,7 @@ hr {
 	float: left;
 }
 
-.footerLinks a {
+.footerLinks a, .mailLink a {
 	color: blue;
 }
 
