@@ -656,11 +656,11 @@ hr {
 	float: left;
 }
 
-.footerLinks a, i {
+.footerLinks a {
 	color: blue;
 }
 
-.footerLinks a:hover, i:hover {
+.footerLinks a:hover {
 	color: blueviolet;
 }
 .bolt-button-cta {
