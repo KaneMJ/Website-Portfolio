@@ -659,6 +659,10 @@ hr {
 .footerLinks a, i {
 	color: blue;
 }
+
+.footerLinks a:hover, i:hover {
+	color: blueviolet;
+}
 .bolt-button-cta {
 	border-radius: 0;
 	border: 2px solid #fff;
