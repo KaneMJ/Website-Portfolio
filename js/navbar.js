@@ -16,8 +16,8 @@ $(document).ready(function() {
         $('#main-nav').toggleClass("open");
     });
     $(window).on('click', function(event) {
-        event.preventDefault();
-        if($('.navbar-collapse').hasClass('in')){    
+        if($('.navbar-collapse').hasClass('in')){
+            event.preventDefault();   
             $('.navbar-collapse').collapse('toggle');
         }
     });
