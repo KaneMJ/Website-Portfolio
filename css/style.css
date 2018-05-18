@@ -656,7 +656,7 @@ hr {
 	float: left;
 }
 
-.footerLinks {
+.footerLinks a, i {
 	color: blue;
 }
 .bolt-button-cta {
