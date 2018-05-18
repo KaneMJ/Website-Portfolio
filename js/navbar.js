@@ -30,7 +30,7 @@ function scrollToID(id, speed){
      offSet = 60;
     }
     var targetOffset = $(id).offset().top - offSet;
-    $('html,body').animate({scrollTop:targetOffset}, speed);
+    $('html,body').animate({scrollTop:targetOffset+5}, speed);
 }
 
 // offset fix
