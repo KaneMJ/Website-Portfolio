@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Matthew Kane" />
+	<meta name="description" content="Matthew Kane - Web Developer">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+	<title>Matthew J Kane - Developer</title>
+
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!-- jQuery Files -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+	<!-- Royal Preloader -->
+	<link rel="stylesheet" type="text/css" href="css/royal_preloader.css" />
+	<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+	<script type="text/javascript">
+
+		// Change to your image paths
+	    var images = {
+	    	
+	    };
+	 
+	    // config
+	    Royal_Preloader.config({
+	        mode:       'text',
+	        images:     images,
+	        timeout:    .5,
+	        showInfo:   false,
+	        background: ['#272727']
+	    });
+	</script>
+
+	<!-- Icon Fonts -->
+	<link href='css/ionicons.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="royal_loader" data-spy="scroll" data-target="#myScrollSpy" data-offset="100">
+
+	<!-- Begin Hero -->
+	<div id="hero" class="jumbotron hero clearfix" data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target=".matt-title h2" style="background-image: url(img/slider/slide2.jpg);">
+
+		<!-- Content -->
+		<div class="container center-vertically">
+			<p class="name-text">Matthew James Kane</p>
+			<div class="matt-title">
+				<h2 class="title-text">Web Developer</h2>
+			</div>
+			<hr>
+			<a href="#" data-id="section2" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
+				Portfolio &nbsp;&nbsp;<span class="ion-ios7-arrow-down"></span>
+			</a>
+		</div>
+
+	</div>
+	<!-- End Hero -->
+
+	<!-- Begin Navigation -->
+	<div class="nav-main navbar">
+
+		<div class="container">
+
+			<div class="navbar-header">
+
+				<!-- Brand -->
+				<a href="javascript:void(0);" class="navbar-brand scroll-top">
+					<span class="ion-ios7-bolt-outline logo-icon"></span>
+				</a>
+
+				<!-- Mobile Navigation -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="ion-navicon toggle-icon"></span>
+				</button>
+
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="navbar-collapse collapse navHeaderCollapse" id="myScrollSpy" role="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#hero" data-id="hero" class="scroll-link">Home</a></li>
+					<li><a href="#section2" data-id="section2" class="scroll-link">Portfolio</a></li>
+					<li><a href="#section3" data-id="section3" class="scroll-link">About</a></li>
+					<li><a href="#section4" data-id="section4" class="scroll-link">Skills</a></li>
+					<li><a href="#section6" data-id="section6" class="scroll-link">Contact</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+	</div>
+	<!-- End Navigation -->
+
+	<!-- Begin Portfolio -->
+	<section id="section2">
+
+		<div class="container portfolio">
+
+			<!-- Page Title -->
+			<div class="row page-title-2">
+				<div class="col-lg-12">
+					<h3>Portfolio</h3>
+					<hr>
+				</div>
+			</div>
+
+			<!-- Portfolio Items -->
+			<div class="container port-holder">
+			  <ul id="myPortfolio" class="no-padding">
+			    <li class="listSpacer item branding col-sm-4 col-xs-12">
+			    	<a data-toggle="modal" href="projects/project-1.html" data-target="#myModal">
+						<img class="center-block" src="img/projects/400SquareDingDinner.jpg"/>
+						<span class="portfolio-hover">
+						  <span>
+						  	<span class="portfolio-title">Ding Dinner</span><br>
+						  	<span class="portfolio-category">Meal Planning for the Indecisive</span>
+						  </span>
+						</span>
+					</a>
+			    </li>
+			    <li class="listSpacer item web col-sm-4 col-xs-12">
+			    	<a data-toggle="modal" href="projects/project-2.html" data-target="#myModal">
+						<img class="center-block" src="img/projects/400SquareJobMap.jpg"/>
+						<span class="portfolio-hover">
+						  <span>
+						  	<span class="portfolio-title">Job Map</span><br>
+						  	<span class="portfolio-category">Map out your Job Search</span>
+						  </span>
+						</span>
+					</a>
+			    </li>
+			    <li class="listSpacer item print col-sm-4 col-xs-12">
+			    	<a data-toggle="modal" href="projects/project-3.html" data-target="#myModal">
+						<img class="center-block" src="img/projects/400SquareActivShare.jpg" />
+						<span class="portfolio-hover">
+						  <span>
+						  	<span class="portfolio-title">ActivShare</span><br>
+						  	<span class="portfolio-category">Share Activities with Others</span>
+						  </span>
+						</span>
+					</a>
+			    </li>
+			  </ul>
+			</div>
+
+		</div>
+
+	</section>
+	<!-- End Portfolio -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog" aria-hidden="true">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-body"></div>
+	        </div> <!-- /.modal-content -->
+	    </div> <!-- /.modal-dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Begin Call to Action -->
+	<div class="cta">
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-1">
+					<p>
+						Interested in working with me?
+					</p>
+				</div>
+				<div class="col-lg-2">
+					<a href="#" data-id="section6" class="btn btn-default bolt-button-cta scroll-link">
+						Contact
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<p>
+						Ready when you are.
+					</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- End Call to Action -->
+
+	<!-- Begin About Us -->
+	<section id="section3">
+		<div class="about">
+			<div class="container">
+				<div class="row">
+
+					<!-- Page Title -->
+					<div class="col-lg-10 col-lg-offset-1 page-title-2">
+						<h3>About</h3>
+						<hr>
+					</div>
+
+					<!-- About Matthew Kane -->
+					<div data-scroll-reveal="enter bottom and move 50px over 1.2s" class="col-sm-10 col-sm-offset-1">
+						<p>Thank you for visiting my webisite. My name is Matthew Kane and I am a Web Developer. With a passion for logic and problem solving, learning to code was a natural fit. I prefer being challenged at work and strive to continue growing as a professional.</p>
+						<p>With a background in Sales, I bring strong communication skills to any potential team. I understand the importance of being a team player after spending the earlier years of my employment in the hospitality industry and two years as a restaurant manager.</p>
+						<p>Outside of work I enjoy surfing, spending time with my family and hanging out at the beach.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End About Us -->
+
+	<!-- Begin Team -->
+	<!-- End Team -->
+
+	<!-- Begin Services -->
+	<section id="section4">
+
+		<div class="services">
+
+			<div class="container">
+
+				<div class="row">
+
+					<!-- Page Title -->
+					<div class="col-lg-10 col-lg-offset-1 page-title-2">
+						<h3>Skills</h3>
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="text-center skill-icon logos">
+						<img src="img/apache.png" alt="Apache" />
+						<img src="img/aws.png" alt="AWS" />
+						<img src="img/C.png" alt="C" />
+						<img src="img/Cplusplus.png" alt="C++" />
+						<img src="img/JavaScript.png" alt="JavaScript" />
+						<img src="img/ES6.png" alt="ES6" />
+						<img src="img/CSS3.png" alt="CSS3" />
+						<img src="img/git.png" alt="git" />
+						<img src="img/GitHub.png" alt="GitHub" />
+						<img src="img/jQuery.png" alt="jQuery" />
+						<img src="img/HTML5.png" alt="HTML5" />
+						<img src="img/MySQL.png" alt="MySQL" />
+						<img src="img/NodeJS.png" alt="node.js" />
+						<img src="img/PHP.png" alt="PHP" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Services -->
+
+	<!-- Begin Quote -->
+	<div class="quote" data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target=".quote-content">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-lg-12">
+					<p data-scroll-reveal="enter top and move 50px over 1s" class="quote-content">
+						Matt worked for me at Ortery Technologies for 3.5 years. During that time, he repeatedly demonstrated his ability to learn quickly, complete his work and communicate clearly. His deep technical skills and problem-solving capabilities made him a valuable all-around asset. He is extremely responsible and cares about the details and quality of his work. I highly recommend him to any prospective employer.
+					</p>
+					<a data-scroll-reveal="enter bottom and move 50px over 1s" href="#" data-id="section3" class="btn btn-default bolt-quote-name">- Sam Shearer, Managing Director, Ortery Technologies</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- End Quote -->
+
+	<!-- Begin Contact -->
+	<section id="section6">
+
+		<div class="contact">
+
+			<div class="container">
+
+				<!-- Page Title -->
+				<div class="col-lg-10 col-lg-offset-1 page-title">
+					<h3>Contact</h3>
+					<hr>
+				</div>
+				<div class="col-sm-6 text-center contactArea">
+					<h4>Location</h4>
+					<p>Orange County, CA</p>
+				</div>
+				<div class="col-sm-6 text-center contactArea">
+					<h4>Email</h4>
+					<p class="mailLink"><a href="mailto:kanejmdev@gmail.com"><i class="fa fa-envelope"></i> kanejmdev@gmail.com</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Contact -->
+
+	<!-- Begin Footer -->
+	<footer id="footer">
+
+		<div class="container">
+			
+			<!-- Copyright And Social -->
+			<div class="col-sm-5">
+				<p class="copyright no-margin">Copyright © Matthew Kane 2018</p>
+			</div>
+
+			<!-- Go To Top -->
+			<div class="col-sm-2 col-sm-offset-0 text-center">
+				<p class="no-margin" style="text-align: center"><span class="ion-ios7-arrow-up up-icon scroll-top" style="display: inline-block;"></span></p>
+			</div>
+			<div class="col-sm-5">
+			</div>
+		</div>
+
+	</footer>
+	<!-- End Footer --> 
+
+	<!-- Javascript Files -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="js/portfolio.js"></script>
+	<script type="text/javascript" src="js/navbar.js"></script>
+	<script type="text/javascript" src="js/ticker.js"></script>
+	<script type="text/javascript" src="js/modal-fix.js"></script>
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+	<script type="text/javascript" src="js/start-skrollr.js"></script>	
+	<script type="text/javascript" src="js/scrollReveal.js"></script>
+	<script type="text/javascript">
+		window.scrollReveal = new scrollReveal();
+		//activate scrollReveal.js
+	</script>
+</body>
+</html>
